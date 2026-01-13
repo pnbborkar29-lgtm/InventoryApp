@@ -1,0 +1,164 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 26px;
+  color: #333;
+}
+
+
+.card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+.material-item {
+  background: #eef2f5;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d7dc;
+}
+
+.material-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+
+.material-item strong {
+  color: #333;
+}
+
+
+.material-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-success {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background: #1e7e34;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #b02a37;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #565e64;
+}
+
+
+.subtotal-section {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+.material-item div {
+  margin-bottom: 6px;
+}
+
+
+@media (max-width: 768px) {
+  .material-row {
+    grid-template-columns: 1fr;
+  }
+
+  .subtotal-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
